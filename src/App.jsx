@@ -11,16 +11,20 @@ import Todo from "./pages/Todo"
 function App() {
   return (
     <BrowserRouter>
+
       <Navbar />
 
-      <div style={{ padding: "20px" }}>
+      <div style={{ minHeight: "80vh", padding: "20px" }}>
         <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/todo" element={<Todo />} />
-         </Routes>
-         <Footer />
-
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/todo" element={<Todo />} />
+        </Routes>
       </div>
+
+      <Footer />
+
     </BrowserRouter>
   )
 }

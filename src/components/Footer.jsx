@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer style={styles.footer}>
-      <p>© 2026 Todo App | Built by Raj 🚀</p>
+      <p>© 2026 Todo App | Built by Raj kushwah 🚀</p>
     </footer>
   )
 }
