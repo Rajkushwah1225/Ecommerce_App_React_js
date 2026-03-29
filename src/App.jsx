@@ -6,6 +6,7 @@ import Footer from "./components/Footer"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
+import Todo from "./pages/Todo"
 
 function App() {
   return (
@@ -14,13 +15,12 @@ function App() {
 
       <div style={{ padding: "20px" }}>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
+        <Route path="/" element={<Home />} />
+        <Route path="/todo" element={<Todo />} />
+         </Routes>
+         <Footer />
 
-      <Footer />
+      </div>
     </BrowserRouter>
   )
 }
